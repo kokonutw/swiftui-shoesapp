@@ -1,0 +1,25 @@
+//
+//  BottomBarView.swift
+//  EazyShoes
+//
+//  Created by Alumno on 11/12/24.
+//
+
+import SwiftUI
+
+struct BottomBarView: View {
+    var body: some View {
+        TabView{
+            ShoesView().tabItem {
+                Label("Shoes", systemImage: "shoes.fill")
+            }
+            ShoesView().tabItem {
+                Label("Favorites", systemImage: "heart.fill")
+            }
+        }
+    }
+}
+
+#Preview {
+    BottomBarView()
+}
